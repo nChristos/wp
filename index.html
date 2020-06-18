@@ -15,15 +15,15 @@
     <script src='wireframe.js'></script>
 
   </head>
-
+  
   <body>
 
     <header>
       <!-- Image sourced from www.rmit.edu.au for educational purposes only -->
-      <div><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 />Nathan Christos
+      <div id=logo ><img src='../media/RMIT-Logo.png' alt='RMIT University logo' height=80 /> Nathan Christos
       </div>
     </header>
-
+    
     <nav>
       Assignments:
       <!-- link locations: relative to current directory -->
@@ -41,22 +41,24 @@
 
     <main>
       <article id='about-me'>
-        <h2>About me</h2>
+        <h2 margin: 20px >About me</h2>
         <p>
-          <img src='../media/disPic.jpg' width='200' alt='my photo' />
+          <img class="img" src='../media/disPic.jpg' width='200' alt='my photo' />
         </p>
-        <section id="more-about-me">
+        <section id="more-about-me" class="more-about-me">
           <div>Who is your tutor / instructor</div>
-          <div>Trevor Reynolds</div>
+          <div>The great Trevor Reynolds!</div>
 
           <div>Who is your labber / workshopper</div>
-          <div>Trevor Reynolds</div>
+          <div>Luckily the same guy!</div>
 
           <div>Have you any programming or web design experience?</div>
-          <div>Yes I have. Well, I like to think so ...</div>
+          <div>Only a tiny bit of html/js/php and what I have picked up studying with RMIT. I love Java, having learnt it early on and have found 
+            Javascript easy to understand (thanks to Java) having picked it up while working with NodeRed within the BITS course. Futher to 
+            this I have fumbled my way through some C and C++ while programming Arduino gizmos for the same BITS project.    </div>
 
           <div>Do you see yourself as a programmer or designer, or both?</div>
-          <div>_</div>
+          <div>I would argue the two are one in the same. </div>
 
           <div>What has brought you to this course at RMIT?</div>
           <div>_</div>
@@ -71,6 +73,9 @@
           <div>_</div>
         </section>
       </article>
+      <aside>
+        <div >Deprecated code removed = align='center'</div>
+      </aside>
       <article id='project'>
         <p>In this space you are asked to compose a website analysis and redevelopment proposal for the website found at this location:<br><a href='https://www.sites.google.com/site/anzacdouglasraymondbaker' target='_blank'>ANZAC Douglas Raymond Baker - Letters Home</a></p>
       </article>
@@ -83,6 +88,5 @@
       </script>.
       Put footer info and other <a href=' '>secondary links</a> here (but only if you wish to). <button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button>
     </footer>
-    
   </body>
 </html>

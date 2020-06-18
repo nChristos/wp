@@ -2,32 +2,51 @@
 
 
 header,
-nav
+nav,
+main,
+aside
 {
- 
-  margin: 5px;
-  
+    margin: 5px;
+    padding: 20px;
+    border-style: outset;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(80, 80, 80);
+    background-image: linear-gradient(to bottom right , rgb(235, 235, 235) , rgb(185, 184, 184) 60%, rgb(221, 221, 221)98%);
 }
 
 body {
+
+    height: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     padding: 5px;
     margin: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.img {
+    margin-left: 10px;
+    box-shadow: 8px 8px 8px  rgb(88, 88, 88);
 }
 
 header {
 
     font-size: 50px;
-    padding: 20px;
+    
+}
+
+.more-about-me {
+
+    padding: 10px;
+    margin: 5px;
     border-style: outset;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(80, 80, 80);
+    background-color: rgb(184, 184, 184);
 
 }
 
-nav {
-
-    padding: 20px;
-    border-style: outset;
-    border-radius: 20px;
-
+div {
+    margin: 8px;
 }
+
