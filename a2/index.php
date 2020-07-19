@@ -14,17 +14,41 @@
   <body>
 
     <header>
-      <div>Put company logo and name here</div>
+    
+      <div class="headergrid">
+      <div class="title a">LETTERS </div>
+      <div class="title b">HOME</div> 
+      <div class="c"><img id="displaypic" src="../../media/dougPic.png" ></div>
+      <div class="d"><img id="soldiers" src="../../media/Soldiers.png"></div>
+        
+      </div>
     </header>
 
     <nav>
-      <div>Put website navigation links here</div>
+      <button class="button fourteen">1914</button>
+      <button class="button fifteen">1915</button>
+      <button class="button sixteen">1916</button>
+      <button class="button seventeen">1917</button>
+      <button class="button eighteen">1918</button>
+      <button class="button about">About</button>
+      
     </nav>
 
     <main>
       <article id='Website Under Construction'>
-    <!-- Creative Commons image sourced from https://pixabay.com/en/maintenance-under-construction-2422173/ and used for educational purposes only -->
-        <img src='../../media/website-under-construction.png' alt='Website Under Construction' />
+    
+      <button class="accordion accone">one</button>
+      <div class="letter"> 
+      </div>
+      <button class="accordion accone">two</button>
+      <div class="letter"> 
+      </div>
+      <button class="accordion accone">three</button>
+      <div class="letter">
+      </div>
+      <button class="accordion accone">four</button>
+      <div class="letter">
+      </div>
       </article>
     </main>
 
@@ -35,6 +59,26 @@
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
+
+    <script>
+      
+      var accordion = document.getElementsByClassName("accordion");
+      var i;
+      for(i=0 ; i < accordion.length; i++){
+        accordion[i].addEventListener("click" , function(){
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+
+          if(panel.style.maxHeight){
+            panel.style.maxHeight = null;
+          } else{
+            panel.style.maxHeight = "1000px";
+          }
+
+        })
+      }
+
+    </script>
 
   </body>
 </html>
