@@ -15,6 +15,9 @@
     font-family: 'google_cursive';
     src: url('../../media/HomemadeApple-Regular.ttf');
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-image: url("../../media/background.png");
@@ -133,7 +136,6 @@ nav{
 .about{
     display: block;
     width: 100%;
-    
 }
 
 main{
@@ -179,8 +181,6 @@ article{
     height: fit-content;
     background-size: cover;
     color: black;
-    
-    
 }
 
 #letterImage{
@@ -201,7 +201,11 @@ article{
     margin-left: 10%;
     width: 40%;
 }
-
+.href{ 
+    margin-right: 5%;
+    text-align: right;
+    font-size: 4vw;
+}
 footer{
     color: rgb(99, 99, 99);
 
@@ -209,7 +213,7 @@ footer{
 
 
 
-@media only screen and (max-width: 3000px){
+@media only screen and (max-width: 10000px){
     .a{
         
         margin-top: 100px;

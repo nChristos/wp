@@ -21,7 +21,7 @@
       <div class="headergrid">
         <div class="title a">LETTERS </div>
         <div class="title b">HOME</div> 
-        <div class="c"><img id="displaypic" src="../../media/dougPic.png" ></div>
+        <div class="c"><img id="displaypic" src="../../media/dougPic.png" alt="Picture of Douglas Raymond Baker"></div>
         <div class="d"><img id="soldiers" src="../../media/Soldiers.png"></div>
         
       
@@ -48,7 +48,7 @@
           <br><br>
           <p>These are copies of letters written by my father Douglas Raymond Baker who I share names with, during his service throughout the First World War (1914-1918). I have three thick exercise books in which the letters were copied in hand writing by my Aunt Alice, his sister. I understand that this was done so his letters could be sent on to other members of the family. I don’t know if the originals are still in existence, probably not.
             <br>
-            <p style="font-size:3vw; text-align:right ">-Douglas Raymond Baker </P>
+            <p style="font-size:3vw; text-align:right; ">-Douglas Raymond Baker </P>
           </p>
             <div class="anzacPin">
               <img  src="../../media/risingSun.png">
@@ -64,18 +64,21 @@
             <p>
             Just have a chance to write a few lines at a small shop near the Camp. We had about four hours in Brisbane before going to Camp and had a good look round. Arrived in Camp about 6 p.m. and all the Gympie lads [Infantry] were placed in one tent [11 of us].  The Light Horse are nearly a mile from us. Of course it was my luck to be made Tent Orderly for the first day – getting the tucker and cleaning up. We have had nothing issued to us yet, so just as well I brought something.  There is no child’s play in this camp – plenty of hard work – they mean business. We have a free hand at night so far and can write as we like.  Saw Herb as we were marching to the Camp. He was going back from work and I had only time to shake hands with him – could not leave the ranks. We will be under Captain Jackson. He has been appointed Captain of the Northern Rivers men and managed to get us in with him. Cannot write any more, am in a hurry. Will write more later on. Am feeling quite homesick. Had our feet examined today, teeth tomorrow I think.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">August 28th. 1914.</button>
           <article class="letter"> 
             <p>
               We are doing plenty of hard work, the officers here think we will be sent straight into the firing line when we get there and the men all seem eager for it. Taking things altogether the life here is not too bad. All the Gympie fellows are very decent and we stick together. Today we were issued with new rifles and bayonets, etc. but so far no uniform.  My regimental number is 692 but you need not put that in the address of any letters. We were advised to let our people know our number in case  - - - -. Yesterday about 150,000 rounds of ball cartridges arrived, we will have to go through a stiff shooting test. Our feet are examined every day. We sit in a long row with bare feet sticking out. I will have to dress for parade now so hooray with best love from Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Post Card, August 31st. 1914.</button>
           <article class="letter">
             <p>
             On Saturday when we came into camp from drill at 12 o’clock, we were told that the Commandant was very pleased with the progress made and had granted us a half holiday so the Gympie lads decided to go to the city. We had a good time in Brisbane and had tea at a fish shop.  Met Herb at about 7 p.m. and we all went to the Empire but the show was very poor. We have had issued to us two towels, two pairs under-pants, two singlets, two pairs socks, a sweater and a cake of soap. I think we will get boots in a day or two and other things. A church parade was held but none of the Gympie lads attended. It happened to be a voluntary one! We are all keeping in pretty good health and hope you all are at home. Today is payday, we are to get paid every fortnight, this time we will get 11 days. I am only drawing half of mine and banking the rest. Love to all.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Troopship “Omrah”. In Arabian Sea, 22nd November 1914.</button>
           <article class="letter">
@@ -99,6 +102,7 @@
             Today was pay day, we only get ten shillings a fortnight, not nearly enough to keep us going.  The German prisoners seem to be starting their tricks already.  This morning one fat German officer asked the sentry to take a towel to one of the other prisoners.  It was nicely folded up and the sentry took it to the captain of the guard who shook it out and a note dropped from it.  We have not heard what the contents of the note are but the prisoners are watched more closely.  The German officers were offered parole when they came on board but refused.
             Monday, Nov. 23rd.   Since getting up this morning we have been in sight of land, Sokotra Island, near the bay of Aden.  Before you get this letter we will be in England if all goes well.  We expect to get to Aden Tuesday night, 24th Nov., three months since we left Gympie
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
       </section>
       <section id="content 1915" class="mainContent">
@@ -125,12 +129,14 @@
             And now dear home folk, I hope I have not wearied you with such a long epistle – anyway I am just about at the end of my tether, but will write again soon. I have no idea how long I will be here but reckon my arm will be quite well in a fortnight or less, so if my luck is in I may be back at the front before you get this letter.  It is a long time since I had a letter and goodness knows when we are likely to get another mail.  But keep on writing for we may get them sometime or other.  I only hope you are all enjoying the best of health and continue to do so and that this letter reaches you alright.  We have been told that these letters will not be censored.  While at Alexandria I sent you a p.c. written in a hurry.
             Well, good-bye dear Mother, with the best of love to you all.  Hope Dad is in good nick, also the girls and Herb.  I would very much like to know if you got the news of the Australians fighting at Gallipoli and what the papers said about it.  I think we did our duty.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Post Card to Dad, written in trenches, 21/7/15.</button>
           <article class="letter"> 
             <p>
               Still going strong and keeping in good health.  I was awfully pleased to get Mother’s letter but the parcel has not yet arrived, nor has Dot’s letter.  Always address my letters to Egypt as I think I will have a better chance of getting them.  Many Australian papers find their way here, I have seen those up to June 5th – some Gympie ones among them.  Any news from Australia is welcome here, Gympie news to me especially.  My news must keep, for reasons known to you.  Hope all at home are well.  Best of love to all.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Anzac, Gallipoli, 24/8/15</button>
           <article class="letter">
@@ -146,7 +152,9 @@
               Today, to us, has been like Xmas day because a great number of things arrived which were bought from the Regimental Fund and have been distributed amongst us.  Here are some of the items:- cigarettes[9 packets per man], tobacco and matches, fancy biscuits, tinned fish, sausages, golden syrup, bottles of sauce, vinegar, paste, writing pads, shaving soap and other soap, lead pencils, candles, epsom salts, sox, chocolates and various other things.  Not too bad to get things like that in the firing line, is it?
               So you had a visit from Herb, I was glad to hear that he had a decent job, it would be alright if he could work into something permanent like that in the Government – a Labor government, too.  You say Mag would not mind washing my greasy togs, tell her I would not mind if I was home chopping copper-wood for her. And don’t you dare try your hand again at sawing wood, the idea!  I was sorry I could not send you the piece of collar and badge but I could not get a new tunic so had to sew up the tear and I still wear the same old coat.  While at Malta I washed it – here we do our washing in the sea. when we go for a swim.
               So sorry Mrs. Cockburn has been unwell, give her my love and please thank all those you mentioned for their good wishes. I think now dear Mother, I must end this letter but you may be sure I will write again soon. There are many letters, I think, written to me that I do not receive, I calculate there must be between 20 and 30.  There may be some chance of us getting relieved for the winter – I hope so, the continual strain is wearing our fellows out.  One of the worst things we have to put up with is the smell of the dead soldiers [Turks and Australians] who remain unburied between the firing lines – but we even get used to that.  This may be rather dusty but we live in dirt, sleep in it, eat it with our food and have our clothes full of it. There are millions of flies here and they are awful pests.  There are many boats in the sea – namely destroyers, cruisers, supply ships, hospital ships and others.  Sometimes German airships fly over and drop a few bombs but they generally drop them where they do no harm.  Our aeroplanes do good work and we often watch them hovering over us, sometimes up to four at a time.  The buzz of their engines is quite easily heard on the ground – I can hear one now. 
-              Well, dearest Mum and Dad, I must close, hoping this reaches you unopened – with best love to all.</p>
+              Well, dearest Mum and Dad, I must close, hoping this reaches you unopened – with best love to all.
+            </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Gallipoli, Sept. 4th. 1915.</button>
           <article class="letter">
@@ -155,7 +163,9 @@
               We are jogging along as usual, things being very quiet in general except for daily artillery duels and we are constantly dodging shrapnel and high explosives.  There is a fair amount of sickness among the troops – the hard life for such a long time is beginning to tell and every day some are being sent away for a spell – our Company is only about ½ strength.  When we landed here in April we were overstrength and since then we have received six lots of reinforcements of from 120 to 150 in each – now the 9th is about 700 strong or less.  There are many yarns about that we are about to be relieved within a fortnight for the winter months but we do not know what to believe.  Anyway, I suppose you will know as soon as we do if that happens.  We all think here that it would be a good plan if they sent the 1st Division to Australia for the winter months – don’t you?
               The other day I got a great surprise – young Ted Eardley turned up here to see me – the lad that was in the Compression Room at the Scottish on my shift.  He is just as wild as ever and seemed quite delighted to meet me.  He has only been here a week – landed with the 11th Light Horse – left Australia in June. There is really not much to write about, dear Dad, for the days pass one after another in much the same way – the things we look forward most is mail day and bread day.  We have become that sick of hard biscuits that we can hardly bear to look at them – the only way we can eat them now is to soak them in water and then fry them in fat.  You would laugh to hear our conversation sometimes on the food question.  Half a dozen of us will get together and each will tell the rest what he most longs for.  Not being able to get what we like, I fancy will make us appreciate the good things if we get back.  How I would like to be sitting down with you all to a good cup of tea and a hot scone and butter.  Butter!  I have not tasted it for over 3 months.  We feel like kings when we get bread and are quite satisfied to eat jam and treacle with it.  Just fancy, I have not spoken to a female since I left Malta or seen one since leaving Egypt the second time.  Well I am living in hopes of living the good times over again.
               Just tell Mother not to worry about me, I am doing A1 and I feel quite confident that I will continue to do so.  Please remember me to George Thomas and Capt. Jackson, many of the fellows here wish they were back with us.  The officer in charge of our Coy. is Lt. Chambers, they will know him, he is far from being popular with the lads.
-              Well Dad, I have to get the tea now [4.20 p.m.] so will close this rather poor letter hoping all at home are in good health and spirits.  Remember me to all friends and relations.  Just heard that another mail is in, hope there is something for me.</p>
+              Well Dad, I have to get the tea now [4.20 p.m.] so will close this rather poor letter hoping all at home are in good health and spirits.  Remember me to all friends and relations.  Just heard that another mail is in, hope there is something for me.
+            </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
       </section>
       <section id="content 1916" class="mainContent">
@@ -179,6 +189,7 @@
             And now, dearest Mother, I must get this letter posted and I will try and write a little more often. With best of love to you all at home, Your loving son,  Ray.
             <br>P.S.  I received your letter that contained the Kangaroo sent by Dad and I treasure it greatly.  Leo Thomas is in Cairo but I have not seen him yet.  Geo. J. has met Mr. Thorley on Lemnos, he was telephone expert at Gympie.   Express my sympathy to the Hays in their bereavement.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">1st. Field Ambulance. March 3rd 1916.</button>
           <article class="letter"> 
@@ -195,7 +206,9 @@
               Must now conclude dearest Mother, with best love to you all at home, 
               <br>Your loving son,
               <br>Ray.
-              <br>P.S.  Love to Auntie and Will, also Beryl and others and Winnie Beck – glad she is in Gympie now.</p>
+              <br>P.S.  Love to Auntie and Will, also Beryl and others and Winnie Beck – glad she is in Gympie now.
+            </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">In the Firing Line, Still somewhere in France. May 18th. 1916.</button>
           <article class="letter">
@@ -210,6 +223,7 @@
                 <br>Ray.
                 <br>P.S. Remember me to all friends, I hope to see Mrs. Cockburn in Gympie some day as she promised.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Belgium, Oct. 2nd. 1916.</button>
           <article class="letter">
@@ -222,6 +236,7 @@
             <div id="letterImage" >
             <img id="Ypres" src="../../media/Ypres.jpg">
             </div>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
       </section>
       <section id="content 1917" class="mainContent">
@@ -240,6 +255,7 @@
             <br>Your loving son,
             <br>Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">France, 21-4-17.</button>
           <article class="letter"> 
@@ -247,6 +263,7 @@
               All I can write at present are a few lines, we are rather busy.  Thanks muchly for the lovely letters and photos you sent.  I am keeping in the best of health and hope you all are at home.  I will be writing a decent letter at the first opportunity, meanwhile I carry on, my thoughts being ever of home.  Herb’s letter was very welcome, also Ivy’s and Dot’s.  Give Olga a slice of love and a hug, I will be glad to get that photo of herself and Duke.  
               <br>Best of love, dear Mum, <br>from Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">No.1 Canadian, General Hospital. France</button>
           <article class="letter">
@@ -254,6 +271,7 @@
               Just a few lines now, I will write again later.  I am doing well but managed to stop a piece of shell a couple of days ago – my right arm this time, but still I am able to write so it is not too bad.  I consider myself lucky to have got out so lightly for the fighting was hot while it lasted and I had visions of Berlin – as a prisoner – we were nearly surrounded by Huns.  Now I am having a good rest and all is well.  My best love to all at home, I hope you are all well.
               <br>Hooray dear Mum,<br>
               Ray.</p>
+              <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Le Treport, France. 12/10/17.</button>
           <article class="letter">
@@ -268,6 +286,7 @@
             <br>Your loving son,
             <br>Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
       </section>
       <section id="content 1918" class="mainContent">
@@ -284,6 +303,7 @@
             <br>Your loving son,
             <br>Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Gander Green Lane. Feb. 8th ’18.</button>
           <article class="letter"> 
@@ -294,6 +314,7 @@
               I hope to be able to write again soon, will close now Mother dear, best of love always to you and all at home,
               <br>Your loving son,
               <br>Ray.</p>
+              <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">School of Instruction, Grantham. Wednesday, March 20th ’18</button>
           <article class="letter">
@@ -311,6 +332,7 @@
               So here I am, Mother dear and tomorrow will start work in earnest.  That is all I can write just now, I have to go to bed.  Good-night dear Mum, my best love to you and all at home, I do hope you are keeping well, I am pretty good myself, so is Nellie and all Sutton – they send their love to you.  Good night, sweet dreams and may I be able to see you soon,
               <br>Your loving son,
               <br>Ray.</p>
+              <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
         <button class="accordion">Australian M. G. T. B., Grantham, England. May 2nd. ’18.</button>
           <article class="letter">
@@ -327,6 +349,7 @@
               <br>Your loving son,
               <br>Ray.
             </p>
+            <div class="href"><a href="#soldiers" >back to top</a></div>
           </article>
       </section>
     </div>
@@ -338,7 +361,11 @@
         document.write(new Date().getFullYear());
       </script> 
       <h2>Information maintained by Ian Baker ibak6837@bigpond.net.au</h2>
-      Nathan Christos, s3788418. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
+      <div><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163">Douglas Raymond Baker's summary of service record in the AIF Project</a><br>
+      <a href="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/ViewImage.aspx?B=3009496&S=1">Douglas Raymond Baker's original service record</a><br>
+      </div>
+      <br>
+      <a href="https://github.com/nChristos/">Nathan Christos</a>, s3788418. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
