@@ -117,17 +117,12 @@ nav{
     font-size: 4vw;
     font-weight: bold;
     
-    
 }
 
 .Postcard div{
-    border-style: outset;
-    border-color: rgb(0, 0, 0);
     background-image: url("../../media/postcard.jpg");
 }
 .Letter div{
-    border-style: outset;
-    border-color: rgb(0, 0, 0);
     background-image: url("../../media/paper_texture1.png");
 }
 
