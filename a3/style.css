@@ -34,7 +34,7 @@ body {
     background-image: url("../../media/sunset.png");
     background-position: center;
     position: relative;
-    size: cover;
+    
     display: grid;
 }
 
@@ -91,7 +91,7 @@ nav{
     align-items: center;
     padding-top: 2.2vw;
     padding-bottom: 1.5vw;
-    background-color: rgba(0, 0, 0, 0.685);
+    background-color: rgba(0, 0, 0, 0.479);
     outline: none;
     color: rgb(175, 147, 71);
     -webkit-text-stroke-color: rgb(63, 46, 0);
