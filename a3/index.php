@@ -1,3 +1,6 @@
+<?php
+include('tools.php');
+?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -13,6 +16,7 @@
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
     <script src='../wireframe.js'></script>
     <script src='script.js'></script>
+    
   </head>
 
   <body>
@@ -34,7 +38,7 @@
       <button id="tab1916" class="tab" onclick="tabSelect(event,'content 1916')">1916</button>
       <button id="tab1917" class="tab" onclick="tabSelect(event,'content 1917')">1917</button>
       <button id="tab1918" class="tab" onclick="tabSelect(event,'content 1918')">1918</button>
-      <button id="tababout" class="tab" onclick="tabSelect(event,'content About')">About</button>
+      <button id="tababout" class="tab active" onclick="tabSelect(event,'content About')">About</button>
       
     </nav>
     
@@ -63,7 +67,7 @@
         
 <!---------------------------------------------------------------------->
 <?php
-include('tools.php');
+csvCompile();
 ?>
 <!------------------------------------------------------------------->
 

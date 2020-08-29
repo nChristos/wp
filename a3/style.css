@@ -67,8 +67,12 @@ body {
 }
 
 nav{
+    z-index: 2;
     display: grid;
-    size: cover;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.685);
+  
 }
 
 #buffer{
@@ -79,7 +83,7 @@ nav{
 
 .tab{
     font-family: 'boston_traffic';
-    font-size: 4vw;
+    font-size: 5vw;
     text-shadow: -.05vw -.05vw 0px rgb(112, 82, 0), .05vw .05vw 0px rgb(255, 221, 126);
     width: auto;
     border: none;
@@ -87,7 +91,7 @@ nav{
     align-items: center;
     padding-top: 2.2vw;
     padding-bottom: 1.5vw;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.685);
     outline: none;
     color: rgb(175, 147, 71);
     -webkit-text-stroke-color: rgb(63, 46, 0);
@@ -102,6 +106,7 @@ nav{
 .tab.active{
     background-image: radial-gradient(rgba(121, 121, 121, 0.363) 20%, rgba(255, 255, 255, 0) 50%);
     color: rgb(224, 196, 116);
+    font-size: 6vw;
 }
 
 
@@ -117,12 +122,17 @@ nav{
     font-size: 4vw;
     font-weight: bold;
     
+    
 }
 
 .Postcard div{
+    border-style: outset;
+    border-color: rgb(34, 25, 0);
     background-image: url("../../media/postcard.jpg");
 }
 .Letter div{
+    border-style: outset;
+    border-color: rgb(34, 25, 0);
     background-image: url("../../media/paper_texture1.png");
 }
 
@@ -183,6 +193,7 @@ transition: transform 1s;
 
 
 .about{
+    margin-top: 5%;
     display: block;
     width: 100%;
 }
