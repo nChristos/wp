@@ -68,6 +68,7 @@ function validateFormData(){
     elseif(isset($_COOKIE['name'])){
         $_SESSION['tempData'] = $_COOKIE;
     }
+}
 
 //////////set/unset cookie variable///////////////////////////////
 
@@ -88,7 +89,7 @@ function addRemoveCookie(){
         setcookie(  "remember" , "" , time()-3600, "/");
     }
 }
-}
+
 
 //////////upload, format and output online CSV document////////////
 
