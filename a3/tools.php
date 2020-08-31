@@ -1,9 +1,10 @@
 <?php
 include("csvCompile.php");
 session_start();
-function validateFormData(){
 
-    
+//////////////validate, sanitise and write message to csv/////////////////////
+
+function validateFormData(){
 
     $mobileRegex = 1;  
     
@@ -20,31 +21,47 @@ function validateFormData(){
         $_SESSION['tempData']['nameAlert'] = "";
         $_SESSION['tempData']['mobileAlert'] = "";
         $_SESSION['tempData']['emailAlert'] = "";
-
+        $_SESSION['alertMessage'] = "";
         
-       
-
           if( $nameRegex == 0){
-            $_SESSION['tempData']['alert'] = true;
+            $_SESSION['tempData']['alert'] = "unset";
             $_SESSION['tempData']['nameAlert'] = "Name could not be validated by server. Please try again";
             header("Location: contactForm.php");
           }
           if( $mobileRegex == 0){
-            $_SESSION['tempData']['alert'] = true;
+            $_SESSION['tempData']['alert'] = "unset";
             $_SESSION['tempData']['mobileAlert'] = "Mobile could not be validated by server. Please try again";
             header("Location: contactForm.php");
           }
     
           if(!filter_var($_SESSION['tempData']['email'], FILTER_VALIDATE_EMAIL)){
-            $_SESSION['tempData']['alert'] = true;
+            $_SESSION['tempData']['alert'] = "unset";
             $sanEmail = filter_var($_SESSION['tempData']['email'], FILTER_SANITIZE_EMAIL);
             $_SESSION['tempData']['emailAlert'] = "unable to verify email:  \"".$_SESSION['tempData']['email']."\"   ";
             $_SESSION['tempData']['emailAlert'] .= "suggested fix: ".$sanEmail."?";
             header("Location: contactForm.php");
           }
         
+          if(isset($_SESSION['mailFlag'])){
+            if($_SESSION['mailFlag'] == "set"){
 
-          
+            $mail = fopen("mail.txt" , "a");
+
+            flock($mail , LOCK_EX);
+
+            
+                fputcsv($mail , $_SESSION['tempData']);
+            
+
+            flock($mail , LOCK_UN);
+
+            fclose($mail);
+
+            $_SESSION['mailFlag'] = "unset";
+            $_SESSION['alertMessage'] = "alert(\"message sent!\");";
+            
+            }
+        }
 
 
     }
@@ -52,7 +69,7 @@ function validateFormData(){
         $_SESSION['tempData'] = $_COOKIE;
     }
 
-    
+//////////set/unset cookie variable///////////////////////////////
 
 function addRemoveCookie(){
 
@@ -112,7 +129,7 @@ HEAD;
 function topModule(){
 
 $htmlTop = <<<TOPDOC
-                    <script> alert("alert box!"); </script>
+                    <script> {$_SESSION['alertMessage']} </script>
                 <body>
                     <header>
                         <div class="headergrid">

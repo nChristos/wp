@@ -11,6 +11,7 @@
     $emailAlert= "";
     $mobileAlert= "";
 
+
     if(isset($_SESSION['tempData']['name'])){$name = $_SESSION['tempData']['name'];}
     if(isset($_SESSION['tempData']['email'])){$email = $_SESSION['tempData']['email'];}
     if(isset($_SESSION['tempData']['mobile'])){$mobile = $_SESSION['tempData']['mobile'];}
@@ -23,6 +24,7 @@
     if(isset($_SESSION['tempData']['mobileAlert'])){$mobileAlert = $_SESSION['tempData']['mobileAlert'];}
     if(isset($_SESSION['tempData']['remember'])){ $remember = "checked";}
     
+    $_SESSION['mailFlag'] = "set";
 
 $htmlForm = <<<FORM
         <body onload="validate()">
