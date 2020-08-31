@@ -48,44 +48,39 @@
 
   function validate() {
 
-    var nameRegex = /^[A-Z][ a-zA-Z -,.']+$/;
-    var emailRegex = /^[a-z.]+[@{1}][a-z.]+$/;
-    var mobileRegex = /(\(04\)|04|\+614)( ?\d){8}$/;
+    var nameRegex = /^[A-Z][ a-zA-Z-,.']+$/;
+    var mobileRegex = /(\(04\)|04|\+614)( ?\d){8}$/;//Thanks Trevor!
 
       var name = document.getElementById("name").value;
-      var email = document.getElementById("email").value;
+      
       var mobile = document.getElementById("mobile").value;
 
       var nameResult = name.search(nameRegex);
-      var emailResult = email.search(emailRegex);
+      
       var mobileResult = 0;
     if(mobile != ""){ mobileResult = mobile.search(mobileRegex);}
 
-      document.getElementById("emailWarn").innerHTML = nameResult;
-      document.getElementById("mobileWarn").innerHTML = (mobileResult);
+    
   
-    if(nameResult != 0 || emailResult != 0 || mobileResult != 0){ 
-        document.getElementById("submit").disabled = true;
-    }
-    else{
-      document.getElementById("submit").disabled = false;
-    }
+    // if(nameResult != 0 ||  mobileResult != 0){ 
+    //     document.getElementById("submit").disabled = true;
+    // }
+    // else{
+    //   document.getElementById("submit").disabled = false;
+    // }
 
-    if(nameResult != 0){
-      document.getElementById("nameWarn").innerHTML = "valid name example: \"Jane R. Smith-Jones\"";
-    } 
-    else{ document.getElementById("nameWarn").innerHTML = null;}
+    // if(nameResult != 0){
+    //   document.getElementById("nameWarn").innerHTML = "valid name example: \"Jane R. Smith-Jones\"";
+    // } 
+    // else{ document.getElementById("nameWarn").innerHTML = null;}
 
-    if(emailResult != 0){
-      document.getElementById("emailWarn").innerHTML = "valid email example: \"email@domain.com\"";
-    } 
-    else{ document.getElementById("emailWarn").innerHTML = null;}
+    // if(mobileResult != 0){
+    //   document.getElementById("mobileWarn").innerHTML = "Australian \"04\" or \"+614\" mobile phone numbers only!";
+    // } 
+    // else{ document.getElementById("mobileWarn").innerHTML = null;}
 
-    if(mobileResult != 0){
-      document.getElementById("mobileWarn").innerHTML = "Australian \"04\" or \"+614\" mobile phone numbers only!";
-    } 
-    else{ document.getElementById("mobileWarn").innerHTML = null;}
+    // }
 
-    }
+    
 
     

@@ -22,6 +22,7 @@ html{
 }
 
 body {
+    font-family: 'Courier New', Courier, monospace;
     background-image: url("../../media/background.png");
     background-size: cover;
     background-position: center;
@@ -294,6 +295,10 @@ footer{
     background-color: rgb(194, 194, 194);
 }
 input[pattern]:invalid{
+    color: red;
+}
+#alert{
+    font-weight: bolder;
     color: red;
 }
 

@@ -1,15 +1,76 @@
 <?php
-session_start();
 include("csvCompile.php");
+session_start();
+function validateFormData(){
 
-function setLocalVariables(){
+    
 
-    if($_POST['remember']){
-        $_SESSION['localData'] = array( "name" => $_POST['name'], "email" => $_POST['email'], "mobile" => $_POST['mobile'], "remember" => "checked");
+    $mobileRegex = 1;  
+    
+    if(isset($_POST['name'])){
+        $_SESSION['tempData'] = $_POST;
+
+        $nameRegex = preg_match( "/^[A-Z][ a-zA-Z-,.']+$/i", $_SESSION['tempData']['name']);
+        if(isset($_SESSION['tempData']['mobile'])){
+            $mobileRegex = preg_match( "/(\(04\)|04|\+614)( ?\d){8}$/", $_SESSION['tempData']['mobile']);
+            }
+        $_SESSION['tempData']['subject'] = filter_var($_SESSION['tempData']['subject'], FILTER_SANITIZE_STRING );
+        $_SESSION['tempData']['message'] = filter_var($_SESSION['tempData']['message'], FILTER_SANITIZE_STRING );
+
+        $_SESSION['tempData']['nameAlert'] = "";
+        $_SESSION['tempData']['mobileAlert'] = "";
+        $_SESSION['tempData']['emailAlert'] = "";
+
+        
+       
+
+          if( $nameRegex == 0){
+            $_SESSION['tempData']['alert'] = true;
+            $_SESSION['tempData']['nameAlert'] = "Name could not be validated by server. Please try again";
+            header("Location: contactForm.php");
+          }
+          if( $mobileRegex == 0){
+            $_SESSION['tempData']['alert'] = true;
+            $_SESSION['tempData']['mobileAlert'] = "Mobile could not be validated by server. Please try again";
+            header("Location: contactForm.php");
+          }
+    
+          if(!filter_var($_SESSION['tempData']['email'], FILTER_VALIDATE_EMAIL)){
+            $_SESSION['tempData']['alert'] = true;
+            $sanEmail = filter_var($_SESSION['tempData']['email'], FILTER_SANITIZE_EMAIL);
+            $_SESSION['tempData']['emailAlert'] = "unable to verify email:  \"".$_SESSION['tempData']['email']."\"   ";
+            $_SESSION['tempData']['emailAlert'] .= "suggested fix: ".$sanEmail."?";
+            header("Location: contactForm.php");
+          }
+        
+
+          
+
+
     }
-    else{
-        unset($_SESSION['localData']);
+    elseif(isset($_COOKIE['name'])){
+        $_SESSION['tempData'] = $_COOKIE;
     }
+
+    
+
+function addRemoveCookie(){
+
+    if(isset($_POST['remember'])){
+        setcookie(  "name" , $_POST['name'] , time()+(86400*30), "/");
+        setcookie(  "email" , $_POST['email'] , time()+(86400*30), "/");
+        setcookie(  "mobile" , $_POST['mobile'] , time()+(86400*30), "/");
+        setcookie(  "remember" , "checked" , time()+(86400*30), "/");
+        
+    }
+    elseif(isset($_POST['name']) && !isset($_POST['remember'])){
+        unset($_SESSION['tempData']);
+        setcookie(  "name" , "" , time()-3600, "/");
+        setcookie(  "email" , "" , time()-3600, "/");
+        setcookie(  "mobile" , "" , time()-3600, "/");
+        setcookie(  "remember" , "" , time()-3600, "/");
+    }
+}
 }
 
 //////////upload, format and output online CSV document////////////
@@ -20,12 +81,16 @@ echo buildCorrespondenceHTML(getCSV());
 
 }
 
+///////////build html head area////////////////////////////////////
+
 function head(){
+
+    $fmtime = filemtime("style.css");
 
 $htmlHead = <<<HEAD
             <!DOCTYPE html>
             <html lang='en'>
-                <head>
+                <head>                   
                     <meta charset="utf-8">
                     <meta name="description" content="Letters written by soldier ANZAC Douglas Raymond Baker during The Great War / World War 1 /  WWI ">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +98,7 @@ $htmlHead = <<<HEAD
                     <title>Assignment 3 - Letters Home</title>                                        
                     <!-- Keep wireframe.css for debugging, add your css to style.css -->
                     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-                    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+                    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=$fmtime">
                     <script src='../wireframe.js'></script>
                     <script src='script.js'></script>                                       
                 </head>
@@ -47,6 +112,7 @@ HEAD;
 function topModule(){
 
 $htmlTop = <<<TOPDOC
+                    <script> alert("alert box!"); </script>
                 <body>
                     <header>
                         <div class="headergrid">

@@ -1,7 +1,9 @@
 <?php
 include('tools.php');
 
-setLocalVariables();
+validateFormData();
+
+addRemoveCookie();
 
 head();
 
@@ -13,7 +15,5 @@ csvCompile();
 
 endModule();
 
-print_r($_POST);
-print_r($_COOKIE);
-print_r($_SESSION);
+
 ?>
