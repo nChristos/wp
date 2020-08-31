@@ -2,6 +2,16 @@
 session_start();
 include("csvCompile.php");
 
+function setLocalVariables(){
+
+    if($_POST['remember']){
+        $_SESSION['localData'] = array( "name" => $_POST['name'], "email" => $_POST['email'], "mobile" => $_POST['mobile'], "remember" => "checked");
+    }
+    else{
+        unset($_SESSION['localData']);
+    }
+}
+
 //////////upload, format and output online CSV document////////////
 
 function csvCompile(){
@@ -10,25 +20,33 @@ echo buildCorrespondenceHTML(getCSV());
 
 }
 
+function head(){
+
+$htmlHead = <<<HEAD
+            <!DOCTYPE html>
+            <html lang='en'>
+                <head>
+                    <meta charset="utf-8">
+                    <meta name="description" content="Letters written by soldier ANZAC Douglas Raymond Baker during The Great War / World War 1 /  WWI ">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                    <meta name="keywords" content="HTML, CSS, JavaScript">
+                    <title>Assignment 3 - Letters Home</title>                                        
+                    <!-- Keep wireframe.css for debugging, add your css to style.css -->
+                    <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
+                    <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
+                    <script src='../wireframe.js'></script>
+                    <script src='script.js'></script>                                       
+                </head>
+HEAD;
+
+    echo $htmlHead;
+}
+
 //////////build upper area of index page html//////////////////////
 
 function topModule(){
 
 $htmlTop = <<<TOPDOC
-            <!DOCTYPE html>
-            <html lang='en'>
-                    <head>
-                        <meta charset="utf-8">
-                        <meta name="description" content="Letters written by soldier ANZAC Douglas Raymond Baker during The Great War / World War 1 /  WWI ">
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-                        <meta name="keywords" content="HTML, CSS, JavaScript">
-                        <title>Assignment 3 - Letters Home</title>                                        
-                        <!-- Keep wireframe.css for debugging, add your css to style.css -->
-                        <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
-                        <link id='stylecss' type="text/css" rel="stylesheet" href="style.css?t=<?= filemtime("style.css"); ?>">
-                        <script src='../wireframe.js'></script>
-                        <script src='script.js'></script>                                       
-                    </head>
                 <body>
                     <header>
                         <div class="headergrid">
@@ -92,7 +110,9 @@ function endModule(){
                         <div>&copy;<script>
                         document.write(new Date().getFullYear());
                         </script> 
-                        <h2>Information maintained by Ian Baker ibak6837@bigpond.net.au</h2>
+                        <form action="contactForm.php">
+                        <button type="submit" >Contact us!</button>
+                        </form>
                         <div><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163">Douglas Raymond Baker's summary of service record in the AIF Project</a><br>
                         <a href="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/ViewImage.aspx?B=3009496&S=1">Douglas Raymond Baker's original service record</a><br>
                         </div>
