@@ -35,7 +35,7 @@ $htmlForm = <<<FORM
                     </div>
                     <div>
                         <span>$nameAlert</span>
-                        <input id="name" class="textBox" type="text" name="name" placeholder="Name..." required  autofocus  value=$name>
+                        <input id="name" class="textBox" type="text" name="name" placeholder="Name..." required  oninput="validate()" autofocus  value=$name>
                         <span id="nameWarn"></span>  
                     </div>
                     <div>
@@ -51,7 +51,7 @@ $htmlForm = <<<FORM
                     </div>
                     <div>
                         <span>$mobileAlert</span>
-                        <input id="mobile" class="textBox" type="text" name="mobile" placeholder="Mobile..."   value=$mobile>
+                        <input id="mobile" class="textBox" type="text" name="mobile" placeholder="Mobile..."  oninput="validate()" value=$mobile>
                         <span id="mobileWarn"></span>
                     </div>
                     <div>
@@ -67,7 +67,7 @@ $htmlForm = <<<FORM
                         <textarea id="message" class="textBox" name="message" rows="10" cols="20" required placeholder="Type your message..." >$message</textarea>
                     </div>
                     <div>
-                        <input type="submit" id="submit">
+                        <button type="submit" id="submit">Send</button>
                     </div>
                     <div>
                         <input type="checkbox" id="remember" name="remember"  $remember >
@@ -80,5 +80,3 @@ $htmlForm = <<<FORM
 FORM;
 
 echo $htmlForm;
-
-echo print_r($_SESSION);

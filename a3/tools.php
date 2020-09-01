@@ -191,12 +191,12 @@ function endModule(){
                         </div>
                     </main>
                     <footer>
-                        <div>&copy;<script>
-                        document.write(new Date().getFullYear());
-                        </script> 
                         <form action="contactForm.php">
                         <button type="submit" >Contact us!</button>
                         </form>
+                        <div>&copy;<script>
+                        document.write(new Date().getFullYear());
+                        </script> 
                         <div><a href="https://www.aif.adfa.edu.au/showPerson?pid=11163">Douglas Raymond Baker's summary of service record in the AIF Project</a><br>
                         <a href="https://recordsearch.naa.gov.au/SearchNRetrieve/Interface/ViewImage.aspx?B=3009496&S=1">Douglas Raymond Baker's original service record</a><br>
                         </div>

@@ -24,9 +24,6 @@ html{
 body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url("../../media/background.png");
-    background-size: cover;
-    background-position: center;
-
 }
 
 .headergrid {
@@ -115,11 +112,11 @@ nav{
     opacity: 0.8;
     position: relative;
     width: 100%;
-    
     height: 10vw;
-    transition: height 0.5s ;
+    transition: height 1s;
+    transition: margin 1s;
     font-family: 'google_handwriting';
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     
     
@@ -128,27 +125,30 @@ nav{
 .Postcard div{
     border-style: outset;
     border-color: rgb(34, 25, 0);
-    background-image: url("../../media/postcard.jpg");
+    background-image: url("../../media/postcard.png");
+    
 }
 .Letter div{
     border-style: outset;
     border-color: rgb(34, 25, 0);
-    background-image: url("../../media/paper_texture1.png");
+    background-image: url("../../media/envelope.png");
+    
 }
 
 .Letter article{
     background-image: url("../../media/paper_texture1.png");
     padding: 10%;
+    background-size: cover;
 }
 .Postcard article{
     background-image: url("../../media/paper_texture1.png");
     padding: 10%;
+    background-size: cover;
 }
 
 .cardfront, .cardback{
 
     box-shadow: inset 0px -20px 25px rgb(0, 0, 0);
-    
     background-size: 100%;
     transition: height 0.5s ;
     size: cover;
@@ -165,8 +165,9 @@ nav{
 .cardfront{
 transform: rotateY(0deg);
 transition: transform 1s;
-
+padding-left: 2%;
 }
+
 .cardback{
     transform: rotateY(180deg); 
     transition: transform 1s;
@@ -183,9 +184,15 @@ transition: transform 1s;
     
 }
 
+.mainContent{
+    
+    grid-template-columns: auto auto;
+}
+
 
 .correspondence:hover{
-    height: 40vw;
+    margin-top: -5vw;
+    height: 15vw;
     opacity: 1.0;
 }
 
@@ -200,7 +207,6 @@ transition: transform 1s;
 
 main{
     min-height: 1200px;
-   
     height: fit-content;
     justify-content: center;
 }
@@ -223,8 +229,8 @@ h1{
 }
 
 #articleWrapper{
-    margin: 4%;
     
+    position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -269,21 +275,34 @@ article{
 }
 footer{
     color: rgb(99, 99, 99);
-
+}
+form button{
+    font-size: 3vw;
+    background-color: rgb(151, 128, 65);
+    margin: 2%;
+    box-shadow: inset .3vw .3vw 1vw rgb(255, 242, 207);
+    max-width: 100%;
+    
+}
+form button:hover{
+    background-color: rgb(187, 160, 84);
 }
 .formgrid{
+    margin: 10%;
     display: grid;
-    
     grid-template-columns: 15% auto;
-    border-style: dotted;
+    border-style: solid;
+    border-color: rgb(112, 82, 0);
     position: relative;
+    background-image: url("../../media/paper_texture1.png");
+    background-size: cover;
 }
 .formgrid div{
     align-items: center;
-    background-color: rgb(43, 43, 43);
     border-style: solid;
-    border-color: rgb(71, 71, 71);
-    color: rgb(230, 176, 0);
+    color: rgb(0, 0, 0);
+    font-size: 2vw;
+    font-weight: bold;
     padding: 2%;
 }
 
@@ -292,13 +311,12 @@ footer{
 }
 .textBox{
     width:99%;
-    background-color: rgb(194, 194, 194);
+    background-color: rgb(197, 197, 197);
+}
+.textBox{
+    font-size: 2vw;
 }
 input[pattern]:invalid{
-    color: red;
-}
-#alert{
-    font-weight: bolder;
     color: red;
 }
 
@@ -351,6 +369,11 @@ input[pattern]:invalid{
     #tababout{
         grid-column: 6;
     }
+    #articleWrapper{
+        padding: 20%;
+        
+        
+    }
     
     }
 @media only screen and (max-width: 1500px){
@@ -380,6 +403,10 @@ input[pattern]:invalid{
 .d{
     grid-column: 1 / span 8;
     grid-row: 3 ;
+}
+#articleWrapper{
+    
+    padding: 15%;
 }
 
 }
@@ -438,7 +465,10 @@ input[pattern]:invalid{
     
     p{
         font-size: 3vw;;
-        
+    }
+    #articleWrapper{
+        margin: 0%;
+        padding: 2%;
     }
     
     }

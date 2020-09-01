@@ -36,7 +36,7 @@
           this.style.height = null;
           this.style.opacity = null;
         } else{
-          this.style.height = "70vw";
+          this.style.height = "40vw";
           this.style.opacity = "1.0"
         }
       })
@@ -62,24 +62,24 @@
 
     
   
-    // if(nameResult != 0 ||  mobileResult != 0){ 
-    //     document.getElementById("submit").disabled = true;
-    // }
-    // else{
-    //   document.getElementById("submit").disabled = false;
-    // }
+    if(nameResult != 0 ||  mobileResult != 0){ 
+        document.getElementById("submit").disabled = true;
+    }
+    else{
+      document.getElementById("submit").disabled = false;
+    }
 
-    // if(nameResult != 0){
-    //   document.getElementById("nameWarn").innerHTML = "valid name example: \"Jane R. Smith-Jones\"";
-    // } 
-    // else{ document.getElementById("nameWarn").innerHTML = null;}
+    if(nameResult != 0){
+      document.getElementById("nameWarn").innerHTML = "valid name example: \"Jane R. Smith-Jones\"";
+    } 
+    else{ document.getElementById("nameWarn").innerHTML = null;}
 
-    // if(mobileResult != 0){
-    //   document.getElementById("mobileWarn").innerHTML = "Australian \"04\" or \"+614\" mobile phone numbers only!";
-    // } 
-    // else{ document.getElementById("mobileWarn").innerHTML = null;}
+    if(mobileResult != 0){
+      document.getElementById("mobileWarn").innerHTML = "Australian \"04\" or \"+614\" mobile phone numbers only!";
+    } 
+    else{ document.getElementById("mobileWarn").innerHTML = null;}
 
-    // }
+    }
 
     
 

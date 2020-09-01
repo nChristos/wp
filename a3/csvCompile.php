@@ -54,9 +54,9 @@ foreach($correspondence as $var => $val){
       $output .= "<article class='correspondence ".$val['Type']."'>"
       
       ."<div class='cardfront'>" 
-      .date('l jS F Y', strtotime($val['DateStart']))
-      ."<h3>".$val['Town']."</h2>"
-      ."<h4>".$val['Country']."</h3>"
+      .date('l jS F Y', strtotime($val['DateStart']))."<br>"
+      .$val['Town']."<br>"
+      .$val['Country']."<br>"
       ."</div>"
       ."<div class = 'cardback'><article><p1 >".nl2br($val['Content']). "</p1></article> </div>"
       
