@@ -24,6 +24,7 @@ html{
 body {
     font-family: 'Courier New', Courier, monospace;
     background-image: url("../../media/background.png");
+    background-size: 100% auto;
 }
 
 .headergrid {
