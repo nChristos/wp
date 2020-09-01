@@ -7,6 +7,7 @@ session_start();
 function validateFormData(){
 
     $mobileRegex = 1;  
+    $_SESSION['alertMessage'] = "";
     
     if(isset($_POST['name'])){
         $_SESSION['tempData'] = $_POST;
@@ -21,7 +22,7 @@ function validateFormData(){
         $_SESSION['tempData']['nameAlert'] = "";
         $_SESSION['tempData']['mobileAlert'] = "";
         $_SESSION['tempData']['emailAlert'] = "";
-        $_SESSION['alertMessage'] = "";
+        
         
           if( $nameRegex == 0){
             $_SESSION['tempData']['alert'] = "unset";
